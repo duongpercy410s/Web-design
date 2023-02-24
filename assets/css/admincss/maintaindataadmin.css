@@ -1,0 +1,51 @@
+.logo {
+    display: contents;
+    margin-left: 25%;
+}
+
+.logoimg {
+    width: 15%;
+    margin-left: 43.7%;
+}
+
+.sort {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 75px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.sort button {
+    margin-right: 25px;
+
+}
+
+.container {
+    border: solid 1px black;
+    text-align: center;
+    background-color: white;
+    width: 60%;
+    padding-left: 55px;
+
+
+}
+
+.Account_list {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.button {
+    margin-left: 70%;
+    margin-top: -5px;
+}

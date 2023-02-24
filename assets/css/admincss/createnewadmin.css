@@ -1,0 +1,55 @@
+.logo {
+    display: contents;
+    margin-left: 25%;
+}
+
+.logoimg {
+    width: 15%;
+    margin-left: 42%;
+}
+
+.sort {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.sort button {
+    margin-right: 25px;
+
+}
+
+.container {
+    border: solid 1px black;
+    text-align: center;
+    background-color: white;
+    width: 28%
+}
+
+input {
+    margin-bottom: 15px;
+    font-size: large;
+}
+
+form {
+    padding-bottom: 25px;
+}
+
+label {
+    font-size: large;
+}
+
+select,
+option {
+    font-size: large;
+}

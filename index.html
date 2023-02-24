@@ -7,32 +7,10 @@
     <title>Document</title>
   </head>
 
-  <script type="text/javascript">
-    var clicks = 0;
-
-    function Add() {
-      clicks += 1;
-      document.getElementById("clicks").innerHTML = clicks;
-    }
-    function Substract() {
-      if (clicks > 0) {
-        clicks -= 1;
-        document.getElementById("clicks").innerHTML = clicks;
-      }
-    }
-
-    function Add() {
-      clicks += 1;
-      document.getElementById("clickss").innerHTML = clicks;
-    }
-    function Substract() {
-      if (clicks > 0) {
-        clicks -= 1;
-        document.getElementById("clickss").innerHTML = clicks;
-      }
-    }
-  </script>
-
+  <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
   <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -53,114 +31,92 @@
     rel="stylesheet"
   />
   <body>
-    <div class="main">
-      <header class="header">
-        <div class="logo"></div>
-        <div class="avt">
-          <img
-            class="avt-img"
-            src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/317954712_702291161247055_7700937006797325992_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=N6d8x1zbiyEAX_szj6V&_nc_ht=scontent.fhan2-3.fna&oh=00_AfDfahKXKkwiWHl_2xSDt3dPReJ9w6EB3DSEJN1bXW4JNQ&oe=63F26435"
-            alt=""
-          />
-          <div class="dropdown">
-            <!-- <h1 class="avt-name">Duong</h1> -->
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              data-toggle="dropdown"
+    <div class="nav">
+      <div class="logo">
+        <img
+          class="logoimg"
+          src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2016/12/01185323/University-of-Greenwich-logo.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="button-nav">
+        <a href="http://127.0.0.1:5500/admin.html">Home</a>
+        <a href="http://127.0.0.1:5500/admin.html">Ideas</a>
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+        >
+          Guest <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          
+          <li>
+            <a href="http://127.0.0.1:5500/admin.html"
+              >Admin</a
             >
-              Duong <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a
-                  href="http://127.0.0.1:5500/Login.html?username=asdasdasd&password=asdasd#"
-                  >Logout</a
-                >
-              </li>
-              <li><a href="#">login</a></li>
-              <li><a href="#">View </a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <h1 class="title">Cordinator Homepage</h1>
-      <div class="container">
-        <div class="famous-idea-all">
-          <div class="famous-idea">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              assumenda minus similique eligendi ipsam repellat, dolore
-              repudiandae illum fugiat tenetur deserunt nihil a tempora ipsa,
-              iste omnis corrupti voluptatum velit!
-            </p>
-          </div>
+          </li>
+          <li><a href="#">Manager </a></li>
+          <li><a href="#">Cordinator </a></li>
+          <li><a href="#">Staff </a></li>
+          <li>
+            <a
+              href="http://127.0.0.1:5500/Login.html?username=asdasdasd&password=asdasd#"
+              >Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="famous-idea">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              assumenda minus similique eligendi ipsam repellat, dolore
-              repudiandae illum fugiat tenetur deserunt nihil a tempora ipsa,
-              iste omnis corrupti voluptatum velit!
-            </p>
-          </div>
-          <div class="famous-idea">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              assumenda minus similique eligendi ipsam repellat, dolore
-              repudiandae illum fugiat tenetur deserunt nihil a tempora ipsa,
-              iste omnis corrupti voluptatum velit!
-            </p>
-          </div>
-          <div class="famous-idea">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              assumenda minus similique eligendi ipsam repellat, dolore
-              repudiandae illum fugiat tenetur deserunt nihil a tempora ipsa,
-              iste omnis corrupti voluptatum velit!
-            </p>
-          </div>
-          <div class="famous-idea">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              assumenda minus similique eligendi ipsam repellat, dolore
-              repudiandae illum fugiat tenetur deserunt nihil a tempora ipsa,
-              iste omnis corrupti voluptatum velit!
-            </p>
-          </div>
+    <div class="sort">
+      <button class="btn btn-warning">Most popular</button>
+      <button class="btn btn-warning">Most view</button>
+      <button class="btn btn-warning">Latest ideas</button>
+      <button class="btn btn-warning">latest comments</button>
+    </div>
+
+    <div class="all-idea">
+      <div class="child-idea">
+        <p class="idea-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          voluptatibus maxime assumenda inventore cum ipsum reprehenderit
+          mollitia harum, repudiandae nihil! Id, eos eligendi quos autem aperiam
+          facere dolor porro!
+        </p>
+        <div class="like-button">
+          <button><i class="fas fa-thumbs-up"></i> 1</button>
+          <button><i class="fas fa-thumbs-down"></i> 1</button>
+          <button><i class="fas fa-comment"></i></button>
         </div>
       </div>
-
-      <div class="all-idea">
-        <div class="child-idea">
-          <div class="like-button">
-            <button type="button" onClick="Add()">up</button>
-            <p id="clicks">0</p>
-
-            <button type="button" onClick="Substract()">down</button>
-          </div>
-          <p class="idea-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
-            voluptatibus maxime assumenda inventore cum ipsum reprehenderit
-            mollitia harum, repudiandae nihil! Id, eos eligendi quos autem
-            aperiam facere dolor porro!
-          </p>
-        </div>
-        <div class="child-idea">
-          <div class="like-button">
-            <button type="button" onClick="Add()">up</button>
-            <p id="clickss">0</p>
-
-            <button type="button" onClick="Substract()">down</button>
-          </div>
-          <p class="idea-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
-            voluptatibus maxime assumenda inventore cum ipsum reprehenderit
-            mollitia harum, repudiandae nihil! Id, eos eligendi quos autem
-            aperiam facere dolor porro!
-          </p>
+      <div class="child-idea">
+        <p class="idea-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet
+          voluptatibus maxime assumenda inventore cum ipsum reprehenderit
+          mollitia harum, repudiandae nihil! Id, eos eligendi quos autem aperiam
+          facere dolor porro!
+        </p>
+        <div class="like-button">
+          <button><i class="fas fa-thumbs-up"></i> 1</button>
+          <button><i class="fas fa-thumbs-down"></i> 1</button>
+          <button><i class="fas fa-comment"></i></button>
         </div>
       </div>
+    </div>
+    <div class="pagination">
+      <a href="#" class="prev">&laquo;</a>
+      <a href="#" class="page active">1</a>
+      <a href="#" class="page">2</a>
+      <a href="#" class="page">3</a>
+      <a href="#" class="page">4</a>
+      <a href="#" class="page">5</a>
+      <a href="#" class="next">&raquo;</a>
+    </div>
+
       <footer class="footer"></footer>
     </div>
   </body>
