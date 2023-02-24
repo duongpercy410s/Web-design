@@ -1,0 +1,124 @@
+body {
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+form {
+    width: 50%;
+    min-width: fit-content;
+    height: fit-content;
+    margin: 50px 25% 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: white;
+    border: solid black 1.5px;
+    border-radius: 50px;
+}
+
+form h1 {
+    color: rgba(56, 93, 203, 0.694);
+}
+/*-------navbar------*/
+.navbar {
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+    min-width: fit-content;
+    position: relative;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li {
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: all ease 0.5s;
+}
+
+.navbar li a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+
+.left_navbar {
+    display: flex;
+    flex-direction: left;
+    justify-content: space-around;
+}
+
+.right_navbar {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.navbar li:hover {
+    background-color:rgba(56, 93, 203, 0.694);
+    border-radius: 70px;
+    transition: all ease 0.5s;
+}
+
+.navbar li:hover a {
+    transition: all ease 0.5s;
+    color:white;
+}
+
+/* -----select topic------ */
+
+.select_topic {
+    margin: 30px 0;
+    display: flex;
+}
+
+.select_topic h2 {
+    color: rgba(56, 93, 203, 0.694);
+}
+
+.select_topic select {
+    margin-left: 20px;
+    padding: 0 20px;
+    color: grey;
+}
+
+/* -------description--------- */
+
+.description textarea{
+    color: black;
+    border-radius: 10px;
+}
+
+.description textarea[placeholder] {
+    text-align: center;
+}
+
+/* --------btn-------- */
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn label {
+    background: rgba(56, 93, 203, 0.694);
+    border: solid black 1px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    transition: all ease 0.5s;
+}
+
+.btn label:hover {
+    transition: all ease 0.5s;
+    background-color: white;
+    border:solid rgba(56, 93, 203, 0.694) 2px;
+    color: rgba(56, 93, 203, 0.694);
+}
