@@ -1,0 +1,63 @@
+.logoimg {
+    width: 15%;
+
+}
+
+.nav {
+    display: flex;
+    background-color: gainsboro;
+
+
+}
+
+.logo {
+    display: contents;
+
+}
+
+
+
+
+
+
+
+.button-nav {
+    font-size: xx-large;
+    margin-top: 45px;
+    margin-left: 20px;
+
+}
+
+.dropdown {
+    margin-left: 900px;
+    font-size: xx-large;
+    margin-top: 45px;
+}
+
+.dropdown-menu {
+    top: 35%;
+}
+
+.buton {
+    margin-left: 74.6%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.manage {
+    text-align: center;
+    border: solid 1px black;
+    width: 70%;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+.child_categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.name {
+    font-size: larger;
+}
