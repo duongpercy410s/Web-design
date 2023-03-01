@@ -20,6 +20,7 @@ form {
 form h1 {
     color: rgba(56, 93, 203, 0.694);
 }
+
 /*-------navbar------*/
 .navbar {
     border: solid black 1px;
@@ -28,9 +29,10 @@ form h1 {
     width: 70%;
     min-width: fit-content;
     position: relative;
+    margin-left: 15%;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
 }
 
@@ -61,15 +63,17 @@ form h1 {
     margin-right: 20px;
 }
 
+.create {}
+
 .navbar li:hover {
-    background-color:rgba(56, 93, 203, 0.694);
+    background-color: rgba(56, 93, 203, 0.694);
     border-radius: 70px;
     transition: all ease 0.5s;
 }
 
 .navbar li:hover a {
     transition: all ease 0.5s;
-    color:white;
+    color: white;
 }
 
 /* -----select topic------ */
@@ -91,7 +95,7 @@ form h1 {
 
 /* -------description--------- */
 
-.description textarea{
+.description textarea {
     color: black;
     border-radius: 10px;
 }
@@ -119,6 +123,6 @@ form h1 {
 .btn label:hover {
     transition: all ease 0.5s;
     background-color: white;
-    border:solid rgba(56, 93, 203, 0.694) 2px;
+    border: solid rgba(56, 93, 203, 0.694) 2px;
     color: rgba(56, 93, 203, 0.694);
 }
