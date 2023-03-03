@@ -1,8 +1,3 @@
-.logoimg {
-    width: 15%;
-
-}
-
 .nav {
     display: flex;
     background-color: gainsboro;
@@ -15,23 +10,16 @@
 
 }
 
-
-
-
-
-
-
-.button-nav {
-    font-size: xx-large;
-    margin-top: 45px;
-    margin-left: 20px;
-
+.logoimg {
+    width: 45%;
+    margin-left: 78px;
 }
 
 .dropdown {
     margin-left: 900px;
     font-size: xx-large;
     margin-top: 45px;
+    margin-right: 100px;
 }
 
 .dropdown-menu {
@@ -42,7 +30,7 @@
     border: solid 1px black;
     border-radius: 5px;
     display: inline-flex;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 75px;
 }
 
