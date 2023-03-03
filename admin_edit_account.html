@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="./assets/css/admincss/editaccount.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/admin.html">
+        <img
+          class="logoimg"
+          src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2016/12/01185323/University-of-Greenwich-logo.jpeg"
+          alt=""
+        />
+      </a>
+    </div>
+
+    <div class="sort">
+      <button class="btn btn-warning">
+        <a href="http://127.0.0.1:5500/maintaindataadmin.html">
+          Maintain data</a
+        >
+      </button>
+    </div>
+
+    <div class="container">
+      <br />
+      <label for="">User name:</label>
+      <br />
+      <input type="text" placeholder="Duong" />
+      <br />
+      <label for="fruits">Select Role:</label>
+      <br />
+      <select id="role" name="role">
+        <option value="Staff">Staff</option>
+        <option value="Manager">Manage</option>
+        <option value="Cordinator">Cordinator</option>
+      </select>
+      <br />
+      <div class="button">
+        <button class="btn btn-danger">Confirm</button>
+        <button class="btn btn-warning">
+          <a href="http://127.0.0.1:5500/maintaindataadmin.html"> Cancel </a>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

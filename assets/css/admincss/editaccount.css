@@ -5,28 +5,24 @@
 
 .logoimg {
     width: 15%;
-    margin-left: 43.7%;
+    margin-left: 42%;
 }
 
 .sort {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 15px;
-    margin-left: 75px;
 
 }
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-.edit {
     color: white;
 }
 
-.edit:hover {
+a:hover {
     color: white;
+    text-decoration: none;
 }
 
 body {
@@ -42,18 +38,28 @@ body {
     border: solid 1px black;
     text-align: center;
     background-color: white;
-    width: 60%;
-    padding-left: 55px;
-
-
+    width: 28%
 }
 
-.Account_list {
-    display: flex;
+input {
     margin-bottom: 15px;
+    font-size: large;
+}
+
+form {
+    padding-bottom: 25px;
+}
+
+label {
+    font-size: large;
+}
+
+select,
+option {
+    font-size: large;
 }
 
 .button {
-    margin-left: 70%;
-    margin-top: -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
