@@ -1,6 +1,6 @@
 .logoimg {
-    width: 15%;
-
+    width: 55%;
+    margin-left: 78px;
 }
 
 .nav {
@@ -10,21 +10,17 @@
 
 }
 
-.logo {
-    display: contents;
-
+a {
+    color: white;
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
 
-
-
-
-
-
-.button-nav {
-    font-size: xx-large;
-    margin-top: 45px;
-    margin-left: 20px;
+.logo {
+    display: contents;
 
 }
 
@@ -32,6 +28,7 @@
     margin-left: 900px;
     font-size: xx-large;
     margin-top: 45px;
+    margin-right: 100px;
 }
 
 .dropdown-menu {
@@ -40,7 +37,7 @@
 
 .buton {
     margin-left: 74.6%;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
