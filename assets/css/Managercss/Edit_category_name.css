@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+.logo {
+    display: contents;
+    margin-left: 25%;
+}
+
+.logoimg {
+    width: 15%;
+
+}
+
+.container {
+    border: solid 1px black;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
