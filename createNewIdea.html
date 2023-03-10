@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/createNewIdea.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -21,39 +27,122 @@
         </div>
       </ul>
     </div>
-    <form action="">
-      <h1>Create new idea</h1>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-8">
+          <form action="">
+            <h1>Create new idea</h1>
 
-      <div class="select_topic">
-        <h2>Topic :</h2>
-        <select name="" id="">
-          <option value="" selected disabled hidden>Select topic</option>
-          <option value="">Topic 1</option>
-          <option value="">Topic 2</option>
-          <option value="">Topic 3</option>
-        </select>
+            <div class="select_topic">
+              <h2>Topic :</h2>
+              <select name="" id="">
+                <option value="" selected disabled hidden>Select topic</option>
+                <option value="">Topic 1</option>
+                <option value="">Topic 2</option>
+                <option value="">Topic 3</option>
+              </select>
+            </div>
+            <div class="description">
+              <textarea
+                rows="20"
+                cols="80"
+                id=""
+                name=""
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="btn">
+              <input
+                type="file"
+                id="upload_file"
+                name=""
+                multiple
+                style="display: none"
+              />
+              <label for="upload_file">Upload file</label>
+              <input
+                type="submit"
+                id="post_idea"
+                name=""
+                style="display: none"
+              />
+              <label for="post_idea">Post idea</label>
+            </div>
+          </form>
+        </div>
+        <div class="col-4">
+          <h3>Category</h3>
+          <div class="category">
+            <span id="Initialive"
+              >1. Initialive to improve the working environment</span
+            >
+            <div id="cate1" style="display: none">
+              <ul>
+                <li>option 1</li>
+                <li>option 2</li>
+                <li>option 3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="category">
+            <span id="Proposal"
+              >2. Proposal to improve the quality of education</span
+            >
+            <div id="cate2" style="display: none">
+              <ul>
+                <li>option 1</li>
+                <li>option 2</li>
+                <li>option 3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="category">
+            <span id="Extra">3. Extra activities</span>
+            <div id="cate3" style="display: none">
+              <ul>
+                <li>option 1</li>
+                <li>option 2</li>
+                <li>option 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="description">
-        <textarea
-          rows="20"
-          cols="80"
-          id=""
-          name=""
-          placeholder="Description"
-        ></textarea>
-      </div>
-      <div class="btn">
-        <input
-          type="file"
-          id="upload_file"
-          name=""
-          multiple
-          style="display: none"
-        />
-        <label for="upload_file">Upload file</label>
-        <input type="submit" id="post_idea" name="" style="display: none" />
-        <label for="post_idea">Post idea</label>
-      </div>
-    </form>
+    </div>
+    <script>
+      document.getElementById("Initialive").onclick = function () {
+        var theDiv = document.getElementById("cate1");
+        var title = document.getElementById("Initialive").innerHTML;
+        if (theDiv.style.display == "none") {
+          theDiv.style.display = "block";
+          this.innerHTML = title;
+        } else {
+          theDiv.style.display = "none";
+          this.innerHTML = title;
+        }
+      };
+      document.getElementById("Proposal").onclick = function () {
+        var theDiv = document.getElementById("cate2");
+        var title = document.getElementById("Proposal").innerHTML;
+        if (theDiv.style.display == "none") {
+          theDiv.style.display = "block";
+          this.innerHTML = title;
+        } else {
+          theDiv.style.display = "none";
+          this.innerHTML = title;
+        }
+      };
+      document.getElementById("Extra").onclick = function () {
+        var theDiv = document.getElementById("cate3");
+        var title = document.getElementById("Extra").innerHTML;
+        if (theDiv.style.display == "none") {
+          theDiv.style.display = "block";
+          this.innerHTML = title;
+        } else {
+          theDiv.style.display = "none";
+          this.innerHTML = title;
+        }
+      };
+    </script>
   </body>
 </html>
