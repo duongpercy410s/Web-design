@@ -1,0 +1,55 @@
+.logoimg {
+    width: 50%;
+    margin-left: 78px;
+}
+
+.nav {
+    display: flex;
+    background-color: gainsboro;
+
+
+}
+
+.logo {
+    display: contents;
+
+}
+
+.dropdown {
+    margin-left: 900px;
+    font-size: xx-large;
+    margin-top: 45px;
+    margin-right: 100px;
+}
+
+.dropdown-menu {
+    top: 44%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr,
+td,
+th {
+    border: 1px solid black;
+}
+
+th {
+    text-align: center;
+}
+
+.container {
+    margin-top: 25px;
+}
+
+.buton {
+    margin-bottom: 15px;
+}
+
+a:hover {
+    text-decoration: none;
+}

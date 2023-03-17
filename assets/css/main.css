@@ -40,6 +40,7 @@
     margin-top: 2px;
     margin-left: 75px;
 
+
 }
 
 .child-idea {
@@ -52,6 +53,7 @@
 .idea-content {
     margin-left: 50px;
     margin-top: 20px;
+    font-size: large;
 }
 
 .like-button {

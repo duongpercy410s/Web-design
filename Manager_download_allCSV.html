@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/Managercss/Download_allCSV.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="./Manager.html">
+          <img
+            class="logoimg"
+            src="https://centaur-wp.s3.eu-central-1.amazonaws.com/designweek/prod/content/uploads/2016/12/01185323/University-of-Greenwich-logo.jpeg"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-toggle="dropdown"
+        >
+          Download file <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="./Manager_manage_categories.html">Manage Catogories</a>
+          </li>
+          <li>
+            <a href="./Manager_View_statistics.html">View Statistics </a>
+          </li>
+
+          <li>
+            <a href="./Login.html">Logout </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="buton">
+        <button class="btn btn-light">
+          <i class="fa-sharp fa-solid fa-download"></i>
+          Download Zip file
+        </button>
+      </div>
+
+      <div class="table">
+        <table>
+          <tr>
+            <th>Month</th>
+            <th>Time-idea</th>
+            <th>Topic</th>
+            <th>Quantity</th>
+            <th>Action</th>
+            <th>Download</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>11/3-15/4</td>
+            <td>Name topic</td>
+            <td>25</td>
+            <td><a href="">Detail</a></td>
+            <td>
+              <a href=""><i class="fa-solid fa-file-csv"></i> CSV</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>11/3-15/4</td>
+            <td>Name topic</td>
+            <td>25</td>
+            <td><a href="">Detail</a></td>
+            <td>
+              <a href=""><i class="fa-solid fa-file-csv"></i> CSV</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
