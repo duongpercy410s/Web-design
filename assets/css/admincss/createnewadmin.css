@@ -46,6 +46,11 @@ form {
     padding-bottom: 25px;
 }
 
+.row label {
+    /* font-size: large; */
+    margin-left: 10%;
+}
+
 label {
     font-size: large;
 }
@@ -266,4 +271,12 @@ a {
 
 nav {
     font-size: large;
+}
+
+.row {
+    width: 50%;
+}
+
+.infor {
+    width: 50%;
 }

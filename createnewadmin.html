@@ -12,6 +12,9 @@
   <script src="./main.js"></script>
   </head>
   <body>
+    
+
+    
     <script>
       function checkPasswordMatch() {
         var password = $("#password").val();
@@ -22,9 +25,6 @@
         else $("#divCheckPasswordMatch").html("Passwords match.");
       }
     </script>
-
-    
-
     <body id="body-pd">
       <header class="header" id="header">
           <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
@@ -45,25 +45,29 @@
       
     
       <div class="create height-100 bg-light">
+      <!-- ================================================== -->
     <div class="container">
-      <form action="./index.html">
+      <form action="./index.html" >
+        <h2 style="text-align: center">Create new</h2>
+        <div class="d-flex justify-content-between">
+        <!-- ============================================= -->
+        
         <div class="row">
-          <h2 style="text-align: center">Create new</h2>
+          
           <label class="mt-2" for="">User name:</label>
 
           <br />
-          <input class="centers mt-2 w-50"
+          <input class="centers mt-2 w-75"
             type="text"
             name="username"
             placeholder="Please enter user name"
             required
           />
-
           <br />
           <label class="mt-2" for="">Password:</label>
           <br />
 
-          <input class="centers mt-2 w-50"
+          <input class="centers mt-2 w-75"
             type="password"
             id="password"
             name="password"
@@ -73,27 +77,66 @@
           <br />
           <label class="mt-2" for="">Confirm password:</label>
           <br />
-          <input class="centers mt-2 w-50"
+          <input class="centers mt-2 w-75"
             type="password"
             id="confirm_password"
             name="confirm_password"
             placeholder="Please confirm password"
             onkeyup="checkPasswordMatch();"
+            
           />
           <div id="divCheckPasswordMatch"></div>
-          <label class="mt-2" for="fruits">Select Role:</label>
+          <label class="mt-2 " for="fruits">Select Role:</label>
           <br>
-          <select class="centers mt-2 w-50" id="role" name="role">
+          <select class="centers mt-2 w-75" id="role" name="role">
             <option value="Staff">Staff</option>
             <option value="Manager">Manage</option>
             <option value="Cordinator">Cordinator</option>
           </select>
-          
-          
-          <button class=" centers mt-2 w-50  btn btn-primary mt-4">Create</button>
         </div>
+        
+          <!-- ==================================================== -->
+          <div class="infor">
+            <label class="mt-2 " for="">Email address:</label>
+
+          <br />
+          <input class=" mt-2 w-75"
+            type="email"
+            name="username"
+            placeholder="Please enter Email address"
+            
+          />
+          <br>
+          <label class="mt-2 " for="">Contact Number:</label>
+
+          <br />
+          <input class=" mt-2 w-75"
+            type="number"
+            name="contact number"
+            placeholder="Please enter Contact Number"
+            
+          />
+          <br>
+          <label class="mt-2 " for="img">Avatar:</label>
+
+          <br />
+          <input class=" mt-2 w-75 centers"
+            type="file"
+            name="img"
+            accept="image/*"
+            
+          />
+          </div>
+          <!-- =========================================== -->
+        </div>
+        
+        <div>
+          <button class="  mt-2 w-50  btn btn-primary mt-4">Create</button>
+        </div>
+
       </form>
     </div>
       </div>
+     
   </body>
 </html>
