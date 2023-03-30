@@ -1,9 +1,11 @@
 .sort {
-    border: solid 1px black;
+
     border-radius: 5px;
     display: inline-flex;
     margin-top: 20px;
     margin-left: 75px;
+    gap: 2px;
+    margin-bottom: 15px;
 }
 
 
@@ -204,11 +206,11 @@ a {
     padding-left: calc(var(--nav-width) + 1rem)
 }
 
-.active {
+.actives {
     color: var(--white-color)
 }
 
-.active::before {
+.actives::before {
     content: '';
     position: absolute;
     left: 0;

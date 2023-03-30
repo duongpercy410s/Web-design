@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="pagination.css">
 
     <link
       rel="stylesheet"
@@ -34,7 +34,7 @@
             <nav class="nav" >
                 <div> <a href="./Manager.html" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">IT Company</span> </a>
                     <div class="nav_list"> 
-                      <a href="./Manager.html" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Staff Page</span> </a>
+                      <a href="./Manager.html" class="nav_link actives"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Staff Page</span> </a>
                       <a href="./createNewIdea.html" class="nav_link "> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Create New Idea</span> </a>
                        
                      
@@ -95,15 +95,14 @@
           </div>
         </div>
       </div>
-      <div class="pagination">
-        <a href="#" class="prev">&laquo;</a>
-        <a href="#" class="page active">1</a>
-        <a href="#" class="page">2</a>
-        <a href="#" class="page">3</a>
-        <a href="#" class="page">4</a>
-        <a href="#" class="page">5</a>
-        <a href="#" class="next">&raquo;</a>
+      <div id="myDIV" class="navs">
+        <button class="btn active">1</button>
+        <button class="btn ">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
       </div>
+      <script src="pagination.js"></script>
     </section>
   </body>
 </html>

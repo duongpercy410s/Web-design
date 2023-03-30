@@ -226,11 +226,11 @@ a {
     padding-left: calc(var(--nav-width) + 1rem)
 }
 
-.active {
+.actives {
     color: var(--white-color)
 }
 
-.active::before {
+.actives::before {
     content: '';
     position: absolute;
     left: 0;

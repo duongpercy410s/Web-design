@@ -1,24 +1,20 @@
-.pagination ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
+.navs .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
 
-
-
-.pagination a {
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    color: #333;
-    display: inline-block;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.pagination a.active {
-    background-color: #4caf50;
-    border-color: #4caf50;
+/* Style the active class (and buttons on mouse-over) */
+.navs .active,
+.btn:hover {
+    background-color: #666;
     color: white;
+}
+
+.navs {
+    margin-top: 20px;
+    text-align: center;
+
 }

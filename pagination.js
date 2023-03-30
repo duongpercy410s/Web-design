@@ -1,39 +1,13 @@
-const data = Array.from({ length: 50 }, (_, i) => i + 1);
-const itemsPerPage = 10;
+var btnContainer = document.getElementById("myDIV");
 
-function displayPage(pageNumber, data) {
-  const startIndex = (pageNumber - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const pageData = data.slice(startIndex, endIndex);
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn");
 
-  // Display page data on the webpage
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
-
-function generatePaginationLinks(totalPages) {
-  const paginationContainer = document.querySelector(".pagination ul");
-
-  for (let i = 1; i <= totalPages; i++) {
-    const paginationLink = document.createElement("a");
-    paginationLink.href = "#";
-    paginationLink.textContent = i;
-
-    paginationLink.addEventListener("click", function () {
-      displayPage(i, data);
-
-      const currentActiveLink = document.querySelector(".pagination a.active");
-      if (currentActiveLink) {
-        currentActiveLink.classList.remove("active");
-      }
-
-      paginationLink.classList.add("active");
-    });
-
-    const paginationItem = document.createElement("li");
-    paginationItem.appendChild(paginationLink);
-
-    paginationContainer.appendChild(paginationItem);
-  }
-}
-
-const totalPages = Math.ceil(data.length / itemsPerPage);
-generatePaginationLinks(totalPages);
