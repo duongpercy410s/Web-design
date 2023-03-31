@@ -1,7 +1,7 @@
-a {
+/* a {
     text-decoration: none;
     color: black;
-}
+} */
 
 .edit {
     color: white;
@@ -11,13 +11,20 @@ a {
     color: white;
 }
 
-body {
+
+
+/* body {
     background-color: hsl(0, 0%, 90%);
-}
+} */
 
 .sort button {
     margin-right: 25px;
 
+}
+
+th,
+td {
+    text-align: center;
 }
 
 .container {
@@ -152,9 +159,7 @@ a {
     color: var(--white-color)
 }
 
-.btn {
-    margin-top: 15px;
-}
+
 
 .centers {
     margin-left: 25%;

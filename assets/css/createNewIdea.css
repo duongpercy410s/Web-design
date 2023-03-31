@@ -114,6 +114,7 @@ form h1 {
 
 .btn {
     margin-top: 20px;
+    gap: 20px;
 }
 
 .btn label {
@@ -335,4 +336,8 @@ a {
 
 nav {
     font-size: large;
+}
+
+#postButton {
+    display: none;
 }
