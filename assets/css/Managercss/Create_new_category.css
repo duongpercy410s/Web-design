@@ -1,27 +1,16 @@
-table {
-    width: 100%;
-    border: 1px solid black;
-    text-align: center;
+.Create_category {
+    margin-left: 25%;
+    border: solid black 1px;
+
+    padding: 25px
 }
 
-/* tr,
-td,
-th {
-    border: 1px solid black;
-} */
-
-th {
-    text-align: center;
+.form-control {
+    border: solid 1px black;
 }
 
-
-
-.buton {
-    margin-bottom: 15px;
-}
-
-a:hover {
-    text-decoration: none;
+h2 {
+    text-align: center
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
@@ -156,11 +145,11 @@ a {
     padding-left: calc(var(--nav-width) + 1rem)
 }
 
-.active {
+.actives {
     color: var(--white-color)
 }
 
-.active::before {
+.actives::before {
     content: '';
     position: absolute;
     left: 0;
